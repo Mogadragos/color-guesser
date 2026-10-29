@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=1920, initial-scale=1.0" />
+        <title>Image guesser - 2.2.1</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <p class="warning">
+            I'm sorry to inform you that scores are unavailable at the moment... I hope you're still having fun with my
+            little game!
+            <br />
+            Alice - mogador (Discord)
+        </p>
+        <h1>Guess the image !</h1>
+        <h2>Click on the image corresponding to the graph's colors</h2>
+        <h3>Score: <span id="score"></span></h3>
+        <div id="container">
+            <div id="images"></div>
+            <div id="chartContainer">
+                <canvas id="chart"></canvas>
+                <div>
+                    <h2>Scores</h2>
+                    <div id="scoresContainer">
+                        <table id="scores">
+                            <thead>
+                                <tr>
+                                    <th>Pseudo</th>
+                                    <th>Score</th>
+                                </tr>
+                            </thead>
+                            <tbody id="scoresBody"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="overlay">
+            <div class="lds-default">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="build.js"></script>
+    </body>
+</html>
