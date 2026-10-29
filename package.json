@@ -1,8 +1,8 @@
 {
     "scripts": {
-        "prebuild": "babel src/script --out-file temp/build.js",
-        "build": "uglifyjs --output dist/build.js --compress --mangle -- temp/build.js",
-        "postbuild": "del \".\\temp\\build.js\""
+        "prebuild": "babel src/script --out-file dist/clean-build.js",
+        "build": "uglifyjs --output dist/build.js --compress --mangle -- dist/clean-build.js",
+        "postbuild": "rm -f dist/clean-build.js"
     },
     "devDependencies": {
         "@babel/cli": "^7.22.5",
