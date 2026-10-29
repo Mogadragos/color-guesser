@@ -40,6 +40,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: PreBuild
+        run: npm run prebuild
+
       - name: Build
         run: npm run build
 
