@@ -1,6 +1,6 @@
 {
     "scripts": {
-        "build": "babel src/script --out-file temp/build.js & uglifyjs --output lib/build.js --compress --mangle -- temp/build.js",
+        "build": "babel src/script --out-file temp/build.js & uglifyjs --output dist/build.js --compress --mangle -- temp/build.js",
         "postbuild": "del \".\\temp\\build.js\""
     },
     "devDependencies": {
